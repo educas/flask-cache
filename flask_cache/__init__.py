@@ -400,7 +400,7 @@ class Cache(object):
                 updated = "%s%s%s" % (altfname, keyargs, keykwargs)
 
             cache_key = hashlib.md5()
-            cache_key.update(updated.encode('utf-8'))
+            cache_key.update(updated)
             cache_key = base64.b64encode(cache_key.digest())[:16]
             cache_key = cache_key.decode('utf-8')
             cache_key += version_data
