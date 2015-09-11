@@ -1,6 +1,16 @@
 Changelog
 ---------
 
+Version 0.14 2015-09-11
+````````````````````
+
+- Fix handling utf8 key args
+- Fix Redis unittest failing
+- Fix doc for delete_memoized
+- Update tests not to do Travis CI specific tests
+- Fix import in documentation
+
+
 Version 0.13 2014-04-21
 ```````````````````````
 

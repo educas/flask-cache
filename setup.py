@@ -11,10 +11,10 @@ from setuptools import setup
 
 setup(
     name='Flask-Cache',
-    version='0.13',
-    url='http://github.com/thadeusb/flask-cache',
+    version='0.14',
+    url='http://github.com/educas/flask-cache',
     license='BSD',
-    author='Thadeus Burgess',
+    author='Thadeus Burgess, Nick Nissen <nkn@educas.com>',
     author_email='thadeusb@thadeusb.com',
     description='Adds cache support to your Flask application',
     long_description=__doc__,
