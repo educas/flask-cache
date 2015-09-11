@@ -1,7 +1,7 @@
 Flask-Cache
 ================
 
-.. module:: flask.ext.cache
+.. module:: flask_cache
 
 Installation
 ------------
@@ -20,7 +20,7 @@ Set Up
 Cache is managed through a ``Cache`` instance::
 
     from flask import Flask
-    from flask.ext.cache import Cache
+    from flask_cache import Cache
 
     app = Flask(__name__)
     # Check Configuring Flask-Cache section for more details
@@ -167,7 +167,7 @@ Set timeout to "del" to delete cached value::
 If keys are provided, you may easily generate the template fragment key and
 delete it from outside of the template context::
 
-    from flask.ext.cache import make_template_fragment_key
+    from flask_cache import make_template_fragment_key
     key = make_template_fragment_key("key1", vary_on=["key2", "key3"])
     cache.delete(key)
 
@@ -192,7 +192,7 @@ Here's an example script to empty your application's cache:
 
 .. code-block:: python
 
-    from flask.ext.cache import Cache
+    from flask_cache import Cache
 
     from yourapp import app, your_cache_config
 
